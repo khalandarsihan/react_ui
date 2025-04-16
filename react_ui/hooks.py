@@ -29,8 +29,8 @@ app_license = "mit"
 # app_include_js = "/assets/react_ui/js/react_ui.js"
 
 # include js, css files in header of web template
-web_include_css = "/assets/react_ui/css/react_ui.css"
-web_include_js = "/assets/react_ui/js/react_ui.bundle.js"
+# web_include_css = "/assets/react_ui/public/css/react_ui.css"
+web_include_js = ["/assets/react_ui/js/react_ui/bundle.js"] 
 
 # include custom scss in every website theme (without file extension ".scss")
 # website_theme_scss = "react_ui/public/scss/website"
@@ -236,6 +236,25 @@ web_include_js = "/assets/react_ui/js/react_ui.bundle.js"
 # default_log_clearing_doctypes = {
 # 	"Logging DocType Name": 30  # days to retain logs
 # }
+
+
 website_route_rules = [
-    {"from_route": "/react_app", "to_route": "react_app"},
+    {"from_route": "/alerts", "to_route": "alerts"},
+    {"from_route": "/bank_accounts", "to_route": "bank_accounts"},
+    {"from_route": "/companies", "to_route": "companies"},
+    {"from_route": "/company_details", "to_route": "company_details"},
+    {"from_route": "/estimates", "to_route": "estimates"},
+    {"from_route": "/estimate_details", "to_route": "estimate_details"},
+    {"from_route": "/home", "to_route": "home"},
+    {"from_route": "/individuals", "to_route": "individuals"},
+    {"from_route": "/individual_details", "to_route": "individual_details"},
+    {"from_route": "/invoices", "to_route": "invoices"},
+    {"from_route": "/invoice_details", "to_route": "invoice_details"},
+    {"from_route": "/legal_documents", "to_route": "legal_documents"},
+    {"from_route": "/partners_contacts", "to_route": "partners_contacts"},
+    {"from_route": "/payments", "to_route": "payments"},
+    {"from_route": "/staff", "to_route": "staff"},
+    {"from_route": "/vehicles", "to_route": "vehicles"},
+    {"from_route": "/works", "to_route": "works"},
+    {"from_route": "/work_details", "to_route": "work_details"},
 ]

@@ -1,6 +1,9 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import "./index.css";
+// import "@/styles/globals.css";
+// import "./globals.css";
+
+import { injectGlobalStyles } from "./injectGlobalStyles";
 import App from "./App";
 
 document.addEventListener("DOMContentLoaded", () => {
